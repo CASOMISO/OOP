@@ -55,7 +55,7 @@ public class CalcGrafi
     public static void main(String[] args) 
     {
         CalcGrafi calcu = new CalcGrafi (0, 0, 0);
-        int opciones = Integer.parseInt(JOptionPane.showInputDialog("1. Suma ///////// 2. Resta /////// 3. Multiplicacion ////// 4. Division       \nIngrese la opcion que desee"));
+        int opciones = Integer.parseInt(JOptionPane.showInputDialog("1. Suma \n2. Resta \n3. Multiplicacion \n4. Division       \nIngrese la opcion que desee"));
         switch(opciones)
         {
             case 1:
@@ -66,17 +66,17 @@ public class CalcGrafi
             case 2:
                 calcu.resta();
                 JOptionPane.showMessageDialog(null, "El resultado de la resta es " + calcu.r, 
-                "Respuesta Suma", JOptionPane.PLAIN_MESSAGE );
+                "Respuesta Resta", JOptionPane.PLAIN_MESSAGE );
             break;
             case 3:
                 calcu.multiplicacion();
                 JOptionPane.showMessageDialog(null, "El resultado de la multiplicacion es " + calcu.r, 
-                "Respuesta Suma", JOptionPane.PLAIN_MESSAGE );
+                "Respuesta Multiplicacion", JOptionPane.PLAIN_MESSAGE );
             break;
             case 4:
                 calcu.division();
                 JOptionPane.showMessageDialog(null, "El resultado de la division es " + calcu.r, 
-                "Respuesta Suma", JOptionPane.PLAIN_MESSAGE );
+                "Respuesta Division", JOptionPane.PLAIN_MESSAGE );
             break;
         }
     } 
